@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Connection Request</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Demande de raccordement énergétique</h1>
+    <form>
+      <label for="fileUpload">Inserer le contrat :</label>
+      <input type="file" id="fileUpload" name="fileUpload" accept=".pdf, .doc, .docx">
+
+      <!-- Informations sur le demandeur -->
+      <label for="applicantName">Mtricule Fiscale :</label>
+      <input type="text" id="applicantName" name="applicantName" required>
+
+      <label for="applicantName">CIN ou Passeport :</label>
+      <input type="text" id="applicantName" name="applicantName" required>
+
+      <!-- Informations de contact -->
+      <label for="contactEmail">E-mail de contact :</label>
+      <input type="email" id="contactEmail" name="contactEmail" required>
+
+      <!-- Informations sur l'adresse -->
+      <label for="siteAddress">Adresse de projet:</label>
+      <textarea id="siteAddress" name="siteAddress" rows="4" required></textarea>
+
+      <label for="fileUpload">Télécharger des documents :</label>
+      <input type="file" id="fileUpload" name="fileUpload" accept=".pdf, .doc, .docx">
+
+
+      <label for="message">Message </label>
+        <textarea id="message" name="message" required></textarea>
+        
+      <table>
+        <tr>
+          <td style="text-align: center;"><button type="reset" >Annuler</button></td>
+          <td style="text-align: center;"><button type="submit" routerLink="/paiement">Envoyer la demande</button>
+          </td>
+        </tr>
+      </table>
+      
+    </form>
+  </div>
+</body>
+
+</html>

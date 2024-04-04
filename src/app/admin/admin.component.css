@@ -1,0 +1,73 @@
+/* Style pour le titre */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style pour la liste */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.action-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style pour le formulaire d'ajout */
+.add-form-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.add-form-container h2 {
+    margin-bottom: 20px;
+}
+
+.add-form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-form-container input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-form-container .error-message {
+    color: red; /* Couleur rouge pour les messages d'erreur */
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.add-form-container button {
+    background-color: #1429ca;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-form-container button.ajout:hover {
+    background-color: #110650;
+}

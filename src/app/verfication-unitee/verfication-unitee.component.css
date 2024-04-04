@@ -1,0 +1,117 @@
+/* Styles généraux */
+
+/* Police */
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* Titres */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Détails de l'utilisateur */
+.user-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.user-details p {
+  margin: 5px 0;
+}
+
+.user-details ul {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.user-details ul li {
+  margin-bottom: 5px;
+}
+
+.user-details ul ul {
+  margin-left: 20px;
+}
+
+.user-details ul ul li {
+  margin-bottom: 3px;
+}
+
+/* Boutons */
+button {
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Formulaires */
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style pour les sections */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Bouton Valider */
+.validate-button {
+  background-color: #0815ce;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.validate-button:hover {
+  background-color: #0a1bd5;
+}
+
+/* Positionnement des boutons Accepter et Refuser côte à côte */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container button {
+  flex: 1;
+}
+
+/* Styles pour les boutons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.button-container button {
+  flex: 1; /* Ajuste la largeur des boutons pour qu'ils occupent un espace égal */
+  margin-right: 10px; /* Espacement entre les boutons */
+}

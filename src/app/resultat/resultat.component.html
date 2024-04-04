@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription en ligne</title>
+    <!-- Add the Bootstrap CSS link -->
+</head>
+<body>
+
+    <div class="container identification-section" ng-app="myApp" ng-controller="myController">
+        <h2>VEUILLEZ VOUS IDENTIFIER AVEC VOTRE NUMERO DE CIN :</h2>
+        <p>Pour entamer votre inscription en ligne, veuillez fournir votre numéro de carte d'identité nationale (CIN).</p>
+
+        <form name="myForm" ng-submit="submitForm()">
+            <div class="form-group">
+                <label for="cin">NUMERO DE CIN :</label>
+                <input type="text" class="form-control" id="cin" name="cin" ng-model="user.cin" placeholder="Entrez votre numéro de CIN" required>
+            </div>
+
+            <p>SI VOUS ÊTES UN ÉTUDIANT ÉTRANGER, <a href="inscription">CLIQUEZ ICI</a></p>
+
+            <!-- Add the submit button -->
+            <button type="submit" class="btn btn-primary" routerLink="/result">Soumettre</button>
+        </form>
+    </div>
+
+   
+
+</body>
+</html>

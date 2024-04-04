@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column; /* Aligner les éléments verticalement */
+  align-items: center; /* Centrer horizontalement */
+  padding: 20px; /* Ajouter un padding pour l'espace autour des boutons */
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column; /* Aligner les boutons verticalement */
+  align-items: center; /* Centrer horizontalement */
+}
+
+.nav-button {
+  background-color: #170c0c; /* Couleur des boutons de navigation */
+  color: white; /* Couleur du texte des boutons */
+  border: none;
+  padding: 20px; /* Augmenter l'espace à l'intérieur des boutons */
+  margin-bottom: 20px; /* Espacement entre les boutons */
+  text-decoration: none; /* Supprimer la soulignement par défaut */
+  text-align: center;
+  font-size: 16px; /* Taille de la police normale */
+  width: 400px; /* Largeur des boutons */
+  transition: transform 0.2s; /* Animation de transition */
+}
+
+.nav-button:hover {
+  background-color: #1c2b1d; /* Couleur des boutons de navigation au survol */
+  transform: scale(1.1); /* Augmenter l'échelle au survol */
+}

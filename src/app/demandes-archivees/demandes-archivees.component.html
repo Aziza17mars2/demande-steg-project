@@ -1,0 +1,41 @@
+<!-- demandes-archivees.component.html -->
+<div>
+    <h3>Rechercher dans les archives</h3>
+    <form (ngSubmit)="search()">
+      <div>
+        <label for="matricule">Matricule fiscale :</label>
+        <input type="text" id="matricule" name="matricule" [(ngModel)]="matriculeFiscale">
+      </div>
+      <div>
+        <label for="dateDebut">Date de début :</label>
+        <input type="date" id="dateDebut" name="dateDebut" [(ngModel)]="dateDebut">
+      </div>
+      <div>
+        <label for="dateFin">Date de fin :</label>
+        <input type="date" id="dateFin" name="dateFin" [(ngModel)]="dateFin">
+      </div>
+      <button type="submit">Rechercher</button>
+    </form>
+  </div>
+<table>
+    <thead>
+      <tr>
+        <th>Mois</th>
+        <th>Année</th>
+        <th>Matricule fiscale</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let moisDemandes of archives">
+        <tr>
+          <td>{{ moisDemandes.mois }}</td>
+          <td>{{ moisDemandes.annee }}</td>
+          <td>
+            <ul>
+              <li *ngFor="let matricule of moisDemandes.matricules">{{ matricule }}</li>
+            </ul>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>

@@ -1,0 +1,27 @@
+<div class="email-form">
+  <h2>Envoyer un e-mail</h2>
+  <form (submit)="sendEmail()">
+    <div>
+      <label for="recipient">Destinataire :</label>
+      <input type="email" id="recipient" name="recipient" [(ngModel)]="recipient" required>
+      <!-- Affichage du message d'erreur si le champ est vide et le formulaire est soumis -->
+      <div *ngIf="submitted && !recipient" class="error-message">Veuillez saisir une adresse e-mail.</div>
+    </div>
+    
+    <div>
+      <label for="subject">Sujet :</label>
+      <input type="text" id="subject" name="subject" [(ngModel)]="subject" required>
+      <!-- Affichage du message d'erreur si le champ est vide et le formulaire est soumis -->
+      <div *ngIf="submitted && !subject" class="error-message">Veuillez saisir un sujet.</div>
+    </div>
+    
+    <div>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" [(ngModel)]="message" required></textarea>
+      <!-- Affichage du message d'erreur si le champ est vide et le formulaire est soumis -->
+      <div *ngIf="submitted && !message" class="error-message">Veuillez saisir un message.</div>
+    </div>
+    
+    <button type="submit">Envoyer</button>
+  </form>
+</div>

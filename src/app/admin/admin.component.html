@@ -1,0 +1,54 @@
+<h1>Liste</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Âge</th>
+      <th>Modifier</th>
+      <th>Supprimer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>nom</td>
+      <td>prenom</td>
+      <td>age</td>
+      <td><img src="assets/modif.png" alt="Modifier" class="action-icon"></td>
+      <td><img src="assets/supp.png" alt="Supprimer" class="action-icon"></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="add-form-container">
+  <h2>Ajouter</h2>
+  <form (submit)="submitForm($event)">
+    <div>
+      <label>Nom :</label>
+      <input type="text" name="nom">
+      <div *ngIf="nomError" class="error-message">{{ nomError }}</div>
+    </div>
+    <div>
+      <label>Prénom :</label>
+      <input type="text" name="prenom">
+      <div *ngIf="prenomError" class="error-message">{{ prenomError }}</div>
+    </div>
+    <div>
+      <label>Numéro de téléphone :</label>
+      <input type="tel" name="tel">
+      <div *ngIf="telError" class="error-message">{{ telError }}</div>
+    </div>
+    <div>
+      <label>Âge :</label>
+      <input type="number" name="age">
+      <div *ngIf="ageError" class="error-message">{{ ageError }}</div>
+    </div>
+    <div>
+      <label>Fonction :</label>
+      <input type="text" name="fonction">
+      <div *ngIf="fonctionError" class="error-message">{{ fonctionError }}</div>
+    </div>
+    <button type="submit" class="ajout">Ajouter</button>
+  </form>
+</div>

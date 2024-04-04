@@ -1,0 +1,82 @@
+
+    <form (submit)="submitForm()">
+        <div class="qubely-column-inner">
+            <div class="wp-block-qubely-heading qubely-block-47eb29">
+                <div class="qubely-block-heading">
+                    <div class="qubely-heading-container">
+                        <h4 class="qubely-heading-selector">
+                            <strong>"Inscrivez vous"<br></strong>
+                            "pour rejoindre notre prochaine session"
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="wp-block-contact-form-7-contact-form-selector">
+                <div role="form" class="wpcf7" id="wpcf7-f1857-p1830-01" lang="fr-FR" dir="ltr">
+                    <div class="screen-reader-response">
+                        <p role="status" aria-live="polite" aria-atomic="true"></p>
+                        <ul></ul>
+                    </div>
+                    <form>
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="1857">
+                            <input type="hidden" name="_wpcf7_version" value="5.6.1">
+                            <input type="hidden" name="_wpcf7_locale" value="fr_FR">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1857-p1830-01">
+                            <input type="hidden" name="_wpcf7_container_post" value="1830">
+                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                            <input type="hidden" name="_wpcf7_recaptcha_response" value="">
+                        </div>
+                        <p> 
+                            <label style="color:#252a37">
+                                <br>
+                                <span class="wpcf7-form-control-wrap" data-name="firstName">
+                                    <input type="text" [(ngModel)]="formData.firstName" name="your-fname" size="40" placeholder="Prénom">
+                                </span>
+                            </label>
+                            
+                            <br>
+                            <label style="color: #252a37"> 
+                                <br>
+                                <span class="wpcf7-form-control-wrap" data-name="your-lname">
+                                    <input type="text"  [(ngModel)]="formData.lastName"  name="your-lname" value size="40"  placeholder="Nom">
+                                </span>
+                            </label>
+                            <br>
+                            <label style="color:#252a37">
+                                <br>
+                                <span class="wpcf7-form-control-wrap" data-name="email">
+                                    <input type="email" [(ngModel)]="formData.email" name="your-email" value size="40"  placeholder="E-mail">
+                                </span>
+                            </label>
+                            <br>
+                            <label style="color:#252a37"> 
+                                <span class="wpcf7-form-control-wrap" data-name="your-phone"> 
+                                    <input type="tel" [(ngModel)]="formData.phoneNumber"  name="your-phone" value size="40"  placeholder="Numéro de téléphone">
+                                </span>
+                            </label>
+                            <br>
+                            <label style="color:#252a37"> 
+                                <span class="wpcf7-form-control-wrap" data-name="your-modepasse"> 
+                                    <input type="password" [(ngModel)]="formData.password" name="password" value size="40"  placeholder="Mot de passe">
+                                </span>
+                            </label>
+                            <br>
+                            <label style="color:#252a37"> 
+                                <span class="wpcf7-form-control-wrap" data-name="your-confmodepasse"> 
+                                    <input type="password" [(ngModel)]="formData.confirmPassword"  name="your-confirm-password" value size="40"  placeholder="confirmer le mot de passe">
+                                </span>
+                            </label>
+                            
+                            <p>
+                                <button type="submit">S'inscrir</button>
+                                 <span class="wpcf7-spinner"> 
+                                </span>   
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.min.js"></script>

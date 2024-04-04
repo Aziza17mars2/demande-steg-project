@@ -1,0 +1,46 @@
+
+<body>
+    <div class="container">
+        <h1>Paiement</h1>
+        <form>
+            <label for="cin">numéro de carte identité</label>
+            <input type="text" id="cin" name="idfacture" placeholder="numéro de carte identité" required>
+
+            <label for="cart">choisir t'on carte bancaire</label>
+                <select id="cart" name="typecarte" required>
+                    <option value="stb">STB</option>
+                    <option value="zaitouna">zaitouna</option>
+                    <option value="bh">BH</option>
+                    <option value="ubci">UBCI</option>
+                    <option value="biat">BIAT</option>
+                    <option value="amenbank">Amenbank</option>
+                    <option value="tsb">TSB</option>
+                    <option value="bna">BNA</option>
+               
+                </select>
+                <label for="cin">Montant</label>
+                <input type="text" id="montant" name="montant" placeholder="montant" required>
+    
+            
+            <label for="numero_carte">Numéro de carte</label>
+            <input type="text" id="numero_carte" name="numcart" placeholder="1234 5678 9012 3456" required>
+
+            <label for="date_expiration">Date d'expiration</label>
+            <input type="text" id="date_expiration" name="datedex" placeholder="JJ/MM/AAAA" required>
+
+            <label for="code_securite">Code de sécurité (CVV)</label>
+            <input type="password" id="code_securite" name="code" placeholder="1234" required>
+
+            <input type="submit"  name="envoyer" id="boutonpayer" value="Payer">
+            <input type="button"  value="Annuler">
+
+        </form>
+    </div>
+    <!-- <script src="paiment.js">
+       document.getElementById("boutonpayer").addEventListener("click", function() {
+        window.location.href = "index.html";
+        alert("confirmation avec succée");
+        });
+        </script> -->
+</body>
+

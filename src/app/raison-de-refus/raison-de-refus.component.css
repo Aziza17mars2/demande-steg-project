@@ -1,0 +1,33 @@
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.email-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.email-form input[type="text"],
+.email-form input[type="email"],
+.email-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.email-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.email-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
